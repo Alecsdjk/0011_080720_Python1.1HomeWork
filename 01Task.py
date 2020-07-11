@@ -1,21 +1,19 @@
-# Запросите у пользователя значения выручки
-revenue = float(input('Прошу ввести значение выручки:'))
-# и издержек фирмы.
-costs = float(input('Прошу ввести значение издержек:'))
-# Определите, с каким финансовым результатом работает фирма
-# (прибыль — выручка больше издержек,
-# или убыток — издержки больше выручки).
-# Выведите соответствующее сообщение.
-if revenue > costs:
-    print(f'Прибыль компании составила: {revenue-costs:.2f},'
-          f'ретабельность компании составила: {((revenue-costs)/revenue)*100:.2f} %')
-    cnt_wrkr = int(input('Введите численность сострудников:'))
-    print(f'Прибыль компании на 1-го сотрудника составила: {(revenue-costs)/cnt_wrkr:.2f}')
-elif revenue == costs:
-    print('мы работаем в ноль')
-else:
-    print(f'Убыток компании составил: {revenue - costs:.2f}')
-# Если фирма отработала с прибылью,
-# вычислите рентабельность выручки (соотношение прибыли к выручке).
-# Далее запросите численность сотрудников фирмы и
-# определите прибыль фирмы в расчете на одного сотрудника.
+# создайте несколько переменых
+var = 0
+print(f'Значение:{var},класс:{type(var)}')
+var = 0.0
+print(f'Значение:{var},класс:{type(var)}')
+var = ''
+print(f'Значение:{var},класс:{type(var)}')
+var = False
+print(f'Значение:{var},класс:{type(var)}')
+var = None
+print(f'Значение:{var},класс:{type(var)}')
+# запросите у пользователя несколько чисел и строк
+# и сохраните в переменные
+user_name = str(input('Sign you name,please:'))
+user_age = int(input('and you age:'))
+user_weight = float(input('will be brave and sign you weight to:'))
+print(f'Congratulation {user_name}!In this massive old galaxy '
+      f'your age only {user_age} and weight less {user_age} kg')
+# выведите на экран.
